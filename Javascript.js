@@ -213,3 +213,13 @@ gsap.from('.lamp', {opacity: 0, duration: 0.5, delay: 1, y: 30, scrollTrigger:".
 gsap.from('.textServices h1', {opacity: 0, duration: 0.4, delay: 0.5, y: 30, scrollTrigger:".textServices h1"}) 
 gsap.from('.textServices p', {opacity: 0, duration: 0.4, delay: 0.7, y: 30, scrollTrigger:".textServices p"}) 
 gsap.from('.textServices li', {opacity: 0, duration: 0.4, delay: 0.9, y: -30, stagger: 0.2, scrollTrigger:".textServices li"}) 
+
+gsap.from('.textDownload h1, .textDownload p', {opacity: 0, duration: 0.7, delay: 0.6, y: -30, stagger: 0.2, scrollTrigger:".textDownload h1, .textDownload p"})
+gsap.from('.android', {opacity: 0, duration: 0.7, delay: 0.6, x: -30, scrollTrigger:".android"})
+gsap.from('.apple', {opacity: 0, duration: 0.7, delay: 0.8, x: -30, scrollTrigger:".apple"})
+gsap.from('.imageDownload h1', {opacity: 0, duration: 0.7, delay: 0.4, x: 30, scrollTrigger:".imageDownload h1"})
+gsap.from('.mockup', {opacity: 0, duration: 0.7, delay: 0.8, x: 30, scrollTrigger:".mockup"})
+
+document.getElementById("navbarDropdown").addEventListener("click", function() {
+	$("dropdown-toggle").classList.add(".dropdown-menuclick");
+  })
