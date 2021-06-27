@@ -203,6 +203,8 @@
 	}) 
 
 // scroll trigger
+//https://github.com/gustibagusbayu/Furniture-order-websites
+
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.from('.sofa1', {opacity: 0, duration: 0.5, delay: 0.4, x: -30, scrollTrigger:".sofa1"}) 
