@@ -250,6 +250,14 @@
     .sb-search.sb-search-open,.no-js .sb-search {
         width:35%;
     }
+
+    .navbar-brand {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-bottom: 7px;
+    }    
+
 }
 
 .sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
@@ -272,6 +280,7 @@
 
   .carousel-content {
         font-family: 'Dancing Script', cursive;
+        font-weight: 800;
       position: absolute;
       bottom: 60%;
       left: 15%;
@@ -283,7 +292,7 @@
   .landing-4,
   .landing-5,
   .landing-1 {
-      filter: brightness(50%);
+      filter: brightness(70%);
   }
 
   .carousel-control-prev-icon,
@@ -315,3 +324,101 @@
   .carousel-indicators .active {
       background-color: red;
   }
+
+  #features {
+      background-color: whitesmoke;
+      
+      position: relative;
+      bottom: 25px;
+      text-align: center;
+      width: 100%;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+:root{
+    /* size margin */
+    --top_navbar: 3rem;
+
+    /* color */
+    --primary: #F3EDE9;
+    --highlight: #F54748;
+    --font_primary: #1B1C22;
+    --navbar_menu: #938071;
+    --promo: #FAFAFA;
+
+    /* fonts */
+    --fonts_family: 'Open Sans', sans-serif;
+    --fonts_default: 1rem;
+    --fonts_hero: 2.25rem;
+    --fonts_title: 2.125rem;
+    --fonts_subtitle: 1.625rem;
+    --fonts_component: 1.125rem;
+    --fonts_footer: 1.25rem;
+    --fonts_copyright: 0.875rem;
+}
+
+  #services{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.lamp{
+    margin-top: -29.7rem;
+    left: 23.5rem;
+    width: 14rem;
+    height: 29rem;
+    position: absolute;
+}
+.sofa1{
+    width: 15.3rem;
+    height: 15.3rem;
+}
+.sofa2{
+    margin-top: -0.2rem;
+    width: 15.3rem;
+    height: 15.3rem;
+}
+.textServices{
+    padding-left: 4rem;
+    margin-top: 5rem;
+}
+.textServices h1{
+    color: var(--font_primary);
+    font-size: var(--fonts_title);
+    line-height: 3rem;
+    font-weight: 700;
+}
+.textServices p{
+    font-size: var(--fonts_default);
+    color: var(--font_primary);
+    line-height: 1.5rem;
+}
+.textServices span{
+    color: var(--highlight);
+}
+.textServices ul{
+    margin-left: -1rem;
+    list-style: none;
+}
+.textServices ul li::before{
+    content: "\2022";
+    color: var(--highlight);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1rem;
+}
+
+.services-container {
+    z-index: 10;
+}
+
+.row {
+    z-index: 20;
+}
+
+.col-lg-6 {
+    background-color:  #F54748;
+    position: relative;
+    z-index: 15;
+    width: 40%;
+}

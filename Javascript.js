@@ -194,4 +194,20 @@
     }
     
     })( window );
-    
+
+	$(document).ready(function(){
+		$('.navbar-nav').on('click', 'a', function(){
+			$('.navbar-nav a.active').removeClass('active');
+			$(this).addClass('active');
+		}) 
+	}) 
+
+// scroll trigger
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.from('.sofa1', {opacity: 0, duration: 0.5, delay: 0.4, x: -30, scrollTrigger:".sofa1"}) 
+gsap.from('.sofa2', {opacity: 0, duration: 0.5, delay: 0.7, y: -30, scrollTrigger:".sofa2"}) 
+gsap.from('.lamp', {opacity: 0, duration: 0.5, delay: 1, y: 30, scrollTrigger:".lamp"}) 
+gsap.from('.textServices h1', {opacity: 0, duration: 0.4, delay: 0.5, y: 30, scrollTrigger:".textServices h1"}) 
+gsap.from('.textServices p', {opacity: 0, duration: 0.4, delay: 0.7, y: 30, scrollTrigger:".textServices p"}) 
+gsap.from('.textServices li', {opacity: 0, duration: 0.4, delay: 0.9, y: -30, stagger: 0.2, scrollTrigger:".textServices li"}) 
